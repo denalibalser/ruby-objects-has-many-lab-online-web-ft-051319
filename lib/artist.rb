@@ -1,3 +1,4 @@
+require 'pry'
 class Artist
   attr_accessor :name
 
@@ -28,7 +29,7 @@ class Artist
     #@songs
     Song.all.select do |song|
       song.artist == self
-    end 
+    end
   end
 
   def self.song_count
